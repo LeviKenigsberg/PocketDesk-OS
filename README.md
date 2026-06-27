@@ -1,4 +1,4 @@
-PocketDesk OS
+# PocketDesk OS
 
 🚧 Status: Active Development
 Current Version: v0.1.0
