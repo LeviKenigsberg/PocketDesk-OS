@@ -1,92 +1,92 @@
 # PocketDesk OS
 
-🚧 Status: Active Development
-Current Version: v0.1.0
+PocketDesk OS is an open-source operating system for the ESP32 Cheap Yellow Display (CYD).
 
-PocketDesk OS is an open-source touchscreen operating system for the ESP32 Cheap Yellow Display (CYD). The goal of the project is to transform the CYD into a portable desk companion with useful everyday tools while remaining easy to install, customize, and expand.
+It transforms the CYD into a portable touchscreen desk gadget with built-in productivity tools, Wi-Fi features, and a web interface.
 
-Features
+---
 
-Current Features (v0.1.0)
+## Features
 
-Touch calibration on first boot
-Calibration saved to flash memory
-Home launcher
-Stopwatch
-Countdown timer
-Dice roller
-Counter
-Screen light
-Settings
-About page
-Planned Features
+### Wi-Fi
 
-Wi-Fi setup wizard
-Internet clock
-Calculator
-Notes
-Alarm
-Themes
-Plugin/App system
-SD card support
-Additional utilities
-Requirements
+- Wi-Fi setup portal (no hardcoded Wi-Fi credentials)
+- Automatic Wi-Fi reconnect
+- Built-in web server
+- Network clock (NTP)
 
-Hardware
+### Web Interface
 
-ESP32 Cheap Yellow Display (CYD)
-MicroSD card
+- Send messages to the device
+- Generate QR codes remotely
+- Switch between apps
 
-Software
+### Built-in Apps
 
-Arduino IDE
-ESP32 Arduino Board Package
-Required Libraries
+- Wi-Fi Clock
+- Stopwatch
+- Timer
+- Dice
+- Counter
+- Flashlight
+- QR Code Generator
+- Message Display
+- Settings
+- About
 
-Install these libraries using the Arduino Library Manager:
+---
 
-TFT_eSPI
-XPT2046_Touchscreen
-The following libraries are included with the ESP32 Arduino Board Package:
+## Hardware
 
-WiFi
-SPI
-Preferences
-time
-Installation
+- ESP32 Cheap Yellow Display (CYD)
+- 2.8" Touchscreen
 
-Install the Arduino IDE.
-Install the ESP32 Arduino Board Package.
-Install the required libraries.
-Open PocketDesk_OS.ino.
-Select your ESP32 CYD board.
-Upload the sketch.
-On first boot, complete the touch calibration.
-PocketDesk OS will save the calibration automatically.
-Why PocketDesk OS?
+---
 
-PocketDesk OS is designed to be more than a collection of demos. The goal is to create a practical operating system for the CYD with tools that are genuinely useful, while making it easy for anyone to build on and contribute to the project.
+## Software
 
-Roadmap
+- Arduino IDE
+- ESP32 Board Package
+- TFT_eSPI
+- XPT2046_Touchscreen
+- QRCode
+- WiFi
+- WebServer
+- Preferences
 
-Touch calibration
-Home launcher
-Stopwatch
-Timer
-Dice roller
-Counter
-Screen light
-Wi-Fi setup
-Internet clock
-Calculator
-Notes
-Alarm
-Themes
-Plugin system
-Contributing
+---
 
-Suggestions, bug reports, and pull requests are welcome. If you have an idea that would make PocketDesk OS better, feel free to open an issue or contribute.
+## Installation
 
-License
+1. Install Arduino IDE.
+2. Install the ESP32 board package.
+3. Install all required libraries.
+4. Open the PocketDesk OS project.
+5. Upload it to your CYD.
 
-PocketDesk OS is released under the MIT License.
+On first boot, PocketDesk OS will:
+
+- Run touch calibration (if needed)
+- Ask for Wi-Fi setup
+- Save Wi-Fi credentials
+- Automatically reconnect on future boots
+
+---
+
+## Roadmap
+
+### v0.3
+
+- Better keyboard
+- Calculator
+- Alarm Clock
+- Notes
+- Wi-Fi scanner
+- More built-in apps
+
+---
+
+## License
+
+MIT License
+
